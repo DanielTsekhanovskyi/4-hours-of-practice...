@@ -1,7 +1,17 @@
 *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-behaver
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
   min-height: 100%;
 }
 
@@ -9,12 +19,30 @@ html, body {
   background-color: lightblue;
 }
 
-html {
-  scroll-behavior: smooth;
+.header {
+  background-color: orange
+}
+
+.footer {
+  background-color: yellow;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-block: 50px;
   height: 500px;
   background-color: lightcoral;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  background-color: lightgray;
 }
